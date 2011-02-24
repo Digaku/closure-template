@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/16/trunk/java/lib
+END
+guava-r03.jar
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/10/trunk/java/lib/guava-r03.jar
+END
+jsr305.jar
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/10/trunk/java/lib/jsr305.jar
+END
+aopalliance.jar
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/java/lib/aopalliance.jar
+END
+args4j-2.0.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/java/lib/args4j-2.0.12.jar
+END
+guice-snapshot.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/16/trunk/java/lib/guice-snapshot.jar
+END
+guice-multibindings-snapshot.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/16/trunk/java/lib/guice-multibindings-snapshot.jar
+END
+javax-inject.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/16/trunk/java/lib/javax-inject.jar
+END
+guice-assistedinject-snapshot.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/16/trunk/java/lib/guice-assistedinject-snapshot.jar
+END
