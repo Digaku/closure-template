@@ -34,21 +34,21 @@ import java.util.Set;
 
 
 /**
- * Soy function that check array for contain some item.
+ * Soy function that get value from hash map by key.
  * point.
  *
  * @author Robin
  */
 @Singleton
-class ListContainsFunction implements SoyJsSrcFunction {
+class GetValFunction implements SoyJsSrcFunction {
 
 
   @Inject
-  ListContainsFunction() {}
+  GetValFunction() {}
 
 
   @Override public String getName() {
-    return "listContains";
+    return "getVal";
   }
 
 
@@ -62,8 +62,8 @@ class ListContainsFunction implements SoyJsSrcFunction {
 	JsExpr aList = args.get(0);
 	JsExpr aKey = args.get(1);
 	
-    //return new JsExpr("Math.max(" + arg0.getText() + ", " + arg1.getText() + ")", Integer.MAX_VALUE);
-	return new JsExpr(aList.getText() + ".indexOf(" + aKey.getText() + ") > -1", Integer.MAX_VALUE);
+	return new JsExpr( aList.getText() + "[" + aKey.getText() + "]"
+					  , Integer.MAX_VALUE);
 
   }
 

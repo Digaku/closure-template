@@ -34,21 +34,21 @@ import java.util.Set;
 
 
 /**
- * Soy function that check array for contain some item.
+ * Soy function that compile Message for digaku spec MessageCompiler.
  * point.
  *
  * @author Robin
  */
 @Singleton
-class ListContainsFunction implements SoyJsSrcFunction {
+class CompileMessageFunction implements SoyJsSrcFunction {
 
 
   @Inject
-  ListContainsFunction() {}
+  CompileMessageFunction() {}
 
 
   @Override public String getName() {
-    return "listContains";
+    return "CompileMessage";
   }
 
 
@@ -59,11 +59,13 @@ class ListContainsFunction implements SoyJsSrcFunction {
 
   @Override public JsExpr computeForJsSrc(List<JsExpr> args) {
 
-	JsExpr aList = args.get(0);
-	JsExpr aKey = args.get(1);
+	JsExpr aText = args.get(0);
+	JsExpr aType = args.get(1); // reserved
 	
-    //return new JsExpr("Math.max(" + arg0.getText() + ", " + arg1.getText() + ")", Integer.MAX_VALUE);
-	return new JsExpr(aList.getText() + ".indexOf(" + aKey.getText() + ") > -1", Integer.MAX_VALUE);
+	return new JsExpr(
+		"digaku.MsgCompiler.compileAll(" + aText.getText() + ")",
+		Integer.MAX_VALUE
+	);
 
   }
 

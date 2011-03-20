@@ -34,36 +34,37 @@ import java.util.Set;
 
 
 /**
- * Soy function that check array for contain some item.
+ * Soy function that slice an array.
  * point.
  *
  * @author Robin
  */
 @Singleton
-class ListContainsFunction implements SoyJsSrcFunction {
+class SliceFunction implements SoyJsSrcFunction {
 
 
   @Inject
-  ListContainsFunction() {}
+  SliceFunction() {}
 
 
   @Override public String getName() {
-    return "listContains";
+    return "slice";
   }
 
 
   @Override public Set<Integer> getValidArgsSizes() {
-    return ImmutableSet.of(2);
+    return ImmutableSet.of(3);
   }
 
 
   @Override public JsExpr computeForJsSrc(List<JsExpr> args) {
 
 	JsExpr aList = args.get(0);
-	JsExpr aKey = args.get(1);
+	JsExpr aIndex1 = args.get(1);
+	JsExpr aIndex2 = args.get(2);
 	
-    //return new JsExpr("Math.max(" + arg0.getText() + ", " + arg1.getText() + ")", Integer.MAX_VALUE);
-	return new JsExpr(aList.getText() + ".indexOf(" + aKey.getText() + ") > -1", Integer.MAX_VALUE);
+	return new JsExpr( aList.getText() + ".slice(" + aIndex1.getText() + ", " + aIndex2.getText() + ")"
+					  , Integer.MAX_VALUE);
 
   }
 

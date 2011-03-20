@@ -43,6 +43,10 @@ public class BasicFunctionsModule extends AbstractModule {
 	
 	/*mine*/
 	soyFunctionsSetBinder.addBinding().to(ListContainsFunction.class);
+	soyFunctionsSetBinder.addBinding().to(CompileMessageFunction.class);
+	soyFunctionsSetBinder.addBinding().to(SliceFunction.class);
+	soyFunctionsSetBinder.addBinding().to(SliceLastFunction.class);
+	soyFunctionsSetBinder.addBinding().to(GetValFunction.class);
   }
 
 }
