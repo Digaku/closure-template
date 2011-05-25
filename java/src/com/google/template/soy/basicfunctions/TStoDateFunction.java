@@ -61,7 +61,7 @@ class TStoDateFunction implements SoyJsSrcFunction {
 
 	JsExpr ts = args.get(0);
 	
-	return new JsExpr( "TStoDate(" + ts.getText() + ")"
+	return new JsExpr( "soy.$$TStoDate(" + ts.getText() + ")"
 					  , Integer.MAX_VALUE);
 
   }

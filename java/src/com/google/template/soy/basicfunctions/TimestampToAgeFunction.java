@@ -34,21 +34,21 @@ import java.util.Set;
 
 
 /**
- * Soy function that compile Message for digaku spec MessageCompiler.
+ * Soy function that compile timestamp to age (use GMT).
  * point.
  *
  * @author Robin
  */
 @Singleton
-class CompileMessageFunction implements SoyJsSrcFunction {
+class TimestampToAgeFunction implements SoyJsSrcFunction {
 
 
   @Inject
-  CompileMessageFunction() {}
+  TimestampToAgeFunction() {}
 
 
   @Override public String getName() {
-    return "CompileMessage";
+    return "TimestampToAge";
   }
 
 
@@ -59,11 +59,11 @@ class CompileMessageFunction implements SoyJsSrcFunction {
 
   @Override public JsExpr computeForJsSrc(List<JsExpr> args) {
 
-	JsExpr aText = args.get(0);
-	JsExpr aType = args.get(1); // reserved
+	JsExpr dTs = args.get(0);
+	JsExpr aTz = args.get(1); // reserved
 	
 	return new JsExpr(
-		"dg.MsgCompiler.compileAll(" + aText.getText() + "," + aType.getText() + ")",
+		"dg.utils.timestampToAge(" + dTs.getText() + "," + aTz.getText() + ")",
 		Integer.MAX_VALUE
 	);
 

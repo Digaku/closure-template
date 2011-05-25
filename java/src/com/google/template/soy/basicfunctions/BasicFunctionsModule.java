@@ -48,6 +48,7 @@ public class BasicFunctionsModule extends AbstractModule {
 	soyFunctionsSetBinder.addBinding().to(SliceLastFunction.class);
 	soyFunctionsSetBinder.addBinding().to(GetValFunction.class);
 	soyFunctionsSetBinder.addBinding().to(TStoDateFunction.class);
+	soyFunctionsSetBinder.addBinding().to(TimestampToAgeFunction.class);
   }
 
 }

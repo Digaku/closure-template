@@ -33,7 +33,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-
 /**
  * Executable for compiling a set of Soy files into corresponding JS source files.
  *
@@ -41,6 +40,7 @@ import java.util.List;
  */
 public final class SoyToJsSrcCompiler {
 
+  public static String VERSION_STR = "0.0.7";
 
   /** The string to prepend to the usage message. */
   private static final String USAGE_PREFIX =
@@ -49,6 +49,10 @@ public final class SoyToJsSrcCompiler {
       "     [<flag1> <flag2> ...] --outputPathFormat <formatString>  \\\n" +
       "     <soyFile1> <soyFile2> ...\n";
 
+  @Option(name = "--version",
+          usage = "Show the version an exit."
+          )
+  private boolean version = false;
 
   @Option(name = "--inputPrefix",
           usage = "If provided, this path prefix will be prepended to each input file path" +
@@ -189,6 +193,12 @@ public final class SoyToJsSrcCompiler {
 
 
   private void execMain(String[] args) throws IOException, SoySyntaxException {
+
+    if(args.length > 0 && args[0].equals("--version")){
+      System.out.println("Version " + VERSION_STR + "\n");
+      System.exit(0);
+      return;
+    }
 
     CmdLineParser cmdLineParser = MainClassUtils.parseFlags(this, args, USAGE_PREFIX);
     if (arguments.size() == 0) {
