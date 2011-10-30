@@ -49,6 +49,10 @@ public class BasicFunctionsModule extends AbstractModule {
 	soyFunctionsSetBinder.addBinding().to(GetValFunction.class);
 	soyFunctionsSetBinder.addBinding().to(TStoDateFunction.class);
 	soyFunctionsSetBinder.addBinding().to(TimestampToAgeFunction.class);
+    soyFunctionsSetBinder.addBinding().to(CurrencyToSymbolFunction.class);
+    soyFunctionsSetBinder.addBinding().to(FormatNumberFunction.class);
+	soyFunctionsSetBinder.addBinding().to(ShortUrlFunction.class);
+	soyFunctionsSetBinder.addBinding().to(ShortTextFunction.class);
   }
 
 }
