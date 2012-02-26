@@ -50,7 +50,7 @@ public final class SoyToJsSrcCompiler {
       "     <soyFile1> <soyFile2> ...\n";
 
   @Option(name = "--version",
-          usage = "Show the version an exit."
+          usage = "Show the version and exit."
           )
   private boolean version = false;
 
@@ -185,6 +185,7 @@ public final class SoyToJsSrcCompiler {
    * @throws SoySyntaxException If a syntax error is detected.
    */
   public static void main(String[] args) throws IOException, SoySyntaxException {
+
     (new SoyToJsSrcCompiler()).execMain(args);
   }
 
