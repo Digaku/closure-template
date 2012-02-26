@@ -16,12 +16,13 @@
 
 package com.google.template.soy.shared.internal;
 
-import com.google.inject.ScopeAnnotation;
-
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
-import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import com.google.inject.ScopeAnnotation;
+
+import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 

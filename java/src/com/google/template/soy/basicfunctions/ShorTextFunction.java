@@ -27,7 +27,7 @@ import com.google.template.soy.javasrc.restricted.SoyJavaSrcFunction;
 import com.google.template.soy.jssrc.restricted.JsExpr;
 import com.google.template.soy.jssrc.restricted.SoyJsSrcFunction;
 import com.google.template.soy.tofu.restricted.SoyTofuFunction;
-import static com.google.template.soy.tofu.restricted.SoyTofuFunctionUtils.toSoyData;
+//import static com.google.template.soy.tofu.restricted.SoyTofuFunctionUtils.toSoyData;
 
 import java.util.List;
 import java.util.Set;

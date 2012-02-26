@@ -1,15 +1,15 @@
 10
 
 dir
-19
+23
 http://closure-templates.googlecode.com/svn/trunk/java/lib
 http://closure-templates.googlecode.com/svn
 
 
 
-2010-07-08T21:21:29.574953Z
-16
-kai.huang
+2011-10-25T19:38:29.345257Z
+23
+bolinfest
 
 
 
@@ -26,17 +26,17 @@ kai.huang
 
 ba6e359a-b4f9-11de-880b-11b4e8d67c75
 
-guava-r03.jar
+javax.inject.jar
 file
 
 
 
 
-2011-02-24T11:09:32.000000Z
-4dd02a4d0353b75306a71232640fba11
-2010-04-22T21:27:44.971493Z
-10
-kai.huang
+2011-10-30T20:54:58.000000Z
+22a0e1fa4678e41c11278992a19ae26b
+2011-09-16T22:08:15.858043Z
+20
+mikesamuel@gmail.com
 has-props
 
 
@@ -58,7 +58,75 @@ has-props
 
 
 
-846590
+2497
+
+icu4j-core.jar
+file
+
+
+
+
+2011-10-30T20:54:58.000000Z
+fd90493e2d92cb6c39aa26b0b60cc63b
+2011-10-25T19:38:29.345257Z
+23
+bolinfest
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3817488
+
+guice-assistedinject-3.0.jar
+file
+
+
+
+
+2011-10-30T20:54:58.000000Z
+3a0db16453bae2334cf4c76ca680d234
+2011-09-16T22:08:15.858043Z
+20
+mikesamuel@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36423
 
 jsr305.jar
 file
@@ -162,17 +230,17 @@ has-props
 
 46032
 
-guice-snapshot.jar
+guice-3.0.jar
 file
 
 
 
 
-2011-02-24T11:09:32.000000Z
-3acbf41c68d23fd2b7f6334c5a89b913
-2010-07-08T21:21:29.574953Z
-16
-kai.huang
+2011-10-30T20:54:59.000000Z
+bbeeaef8bd60f095dcac6d824b8d35d4
+2011-09-16T22:08:15.858043Z
+20
+mikesamuel@gmail.com
 has-props
 
 
@@ -194,19 +262,19 @@ has-props
 
 
 
-699880
+710683
 
-guice-multibindings-snapshot.jar
+guava-r09.jar
 file
 
 
 
 
-2011-02-24T11:09:32.000000Z
-03f8805ba88216600aec86fff82ba3cc
-2010-07-08T21:21:29.574953Z
-16
-kai.huang
+2011-10-30T20:54:59.000000Z
+e2f05ca989f46ec22d5b1cc251aa2476
+2011-09-16T22:08:15.858043Z
+20
+mikesamuel@gmail.com
 has-props
 
 
@@ -228,19 +296,19 @@ has-props
 
 
 
-27818
+1141964
 
-javax-inject.jar
+guice-multibindings-3.0.jar
 file
 
 
 
 
-2011-02-24T11:09:32.000000Z
-2f6ce98251dcc69599cfe9a8bfcfec1d
-2010-07-08T21:21:29.574953Z
-16
-kai.huang
+2011-10-30T20:54:59.000000Z
+334abfa3aa0b5cc2f6e42dcb1f65665c
+2011-09-16T22:08:15.858043Z
+20
+mikesamuel@gmail.com
 has-props
 
 
@@ -262,39 +330,5 @@ has-props
 
 
 
-2497
-
-guice-assistedinject-snapshot.jar
-file
-
-
-
-
-2011-02-24T11:09:32.000000Z
-25806b95bfe490586c3bfedd38ded0b5
-2010-07-08T21:21:29.574953Z
-16
-kai.huang
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-39251
+33892
 

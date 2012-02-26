@@ -1,13 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 31
-/svn/!svn/ver/16/trunk/java/lib
+/svn/!svn/ver/23/trunk/java/lib
 END
-guava-r03.jar
+javax.inject.jar
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/svn/!svn/ver/10/trunk/java/lib/guava-r03.jar
+V 48
+/svn/!svn/ver/20/trunk/java/lib/javax.inject.jar
+END
+icu4j-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/23/trunk/java/lib/icu4j-core.jar
+END
+guice-assistedinject-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/java/lib/guice-assistedinject-3.0.jar
 END
 jsr305.jar
 K 25
@@ -27,27 +39,21 @@ svn:wc:ra_dav:version-url
 V 48
 /svn/!svn/ver/2/trunk/java/lib/args4j-2.0.12.jar
 END
-guice-snapshot.jar
+guice-3.0.jar
 K 25
 svn:wc:ra_dav:version-url
-V 50
-/svn/!svn/ver/16/trunk/java/lib/guice-snapshot.jar
+V 45
+/svn/!svn/ver/20/trunk/java/lib/guice-3.0.jar
 END
-guice-multibindings-snapshot.jar
+guava-r09.jar
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/16/trunk/java/lib/guice-multibindings-snapshot.jar
+V 45
+/svn/!svn/ver/20/trunk/java/lib/guava-r09.jar
 END
-javax-inject.jar
+guice-multibindings-3.0.jar
 K 25
 svn:wc:ra_dav:version-url
-V 48
-/svn/!svn/ver/16/trunk/java/lib/javax-inject.jar
-END
-guice-assistedinject-snapshot.jar
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/16/trunk/java/lib/guice-assistedinject-snapshot.jar
+V 59
+/svn/!svn/ver/20/trunk/java/lib/guice-multibindings-3.0.jar
 END

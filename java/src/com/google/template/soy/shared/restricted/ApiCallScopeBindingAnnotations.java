@@ -16,13 +16,14 @@
 
 package com.google.template.soy.shared.restricted;
 
-import com.google.inject.BindingAnnotation;
-
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
-import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import com.google.inject.BindingAnnotation;
+
+import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 
@@ -48,20 +49,20 @@ public class ApiCallScopeBindingAnnotations {
 
 
   /**
+   * Annotation for the isIsingIjData parameter in the ApiCallScope.
+   */
+  @BindingAnnotation
+  @Target({FIELD, PARAMETER, METHOD})
+  @Retention(RUNTIME)
+  public @interface IsUsingIjData {}
+
+
+  /**
    * Annotation for the localeString parameter in the ApiCallScope.
    */
   @BindingAnnotation
   @Target({FIELD, PARAMETER, METHOD})
   @Retention(RUNTIME)
   public @interface LocaleString {}
-
-
-  /**
-   * Annotation for the bidiGlobalDir parameter in the ApiCallScope.
-   */
-  @BindingAnnotation
-  @Target({FIELD, PARAMETER, METHOD})
-  @Retention(RUNTIME)
-  public @interface BidiGlobalDir {}
 
 }
