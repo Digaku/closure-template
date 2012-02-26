@@ -39,7 +39,7 @@ import java.util.List;
  */
 public final class SoyToJsSrcCompiler {
 
-  public static String VERSION_STR = "0.0.10";
+  public static String VERSION_STR = "0.0.11";
 
   /** The string to prepend to the usage message. */
   private static final String USAGE_PREFIX =
