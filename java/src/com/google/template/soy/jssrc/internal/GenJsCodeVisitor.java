@@ -352,9 +352,13 @@ class GenJsCodeVisitor extends AbstractSoyNodeVisitor<List<String>> {
             calleeNotInFile + "\" that does not reside in a namespace.", null, soyFile);
       }
       String calleeNamespace = calleeNotInFile.substring(0, lastDotIndex);
-      if (calleeNamespace.length() > 0 && !calleeNamespace.equals(prevCalleeNamespace)) {
-        jsCodeBuilder.appendLine("goog.require('", calleeNamespace, "');");
-        prevCalleeNamespace = calleeNamespace;
+
+      // prevent circular dependency error (require on himself namespace).
+      if (!calleeNamespace.equals(soyFile.getNamespace())){
+          if (calleeNamespace.length() > 0 && !calleeNamespace.equals(prevCalleeNamespace)) {
+            jsCodeBuilder.appendLine("goog.require('", calleeNamespace, "');");
+            prevCalleeNamespace = calleeNamespace;
+          }
       }
     }
     if ((new HasPluralSelectMsgVisitor()).exec(soyFile)) {
